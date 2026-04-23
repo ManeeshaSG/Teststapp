@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="screen active" id="screen1">
+  <img src="images/stitch1.png" class="stitch">
+  <h2>Hey… someone has something for you 💌</h2>
+  <button onclick="nextScreen(2)">Open it 👀</button>
+</div>
+
+<div class="screen" id="screen2">
+  <h2>Are you ready? 😏</h2>
+  <button onclick="nextScreen(3)">Yes 💖</button>
+  <button onclick="noClick()">No 😒</button>
+  <p id="noText"></p>
+</div>
+
+<div class="screen" id="screen3">
+  <h2>This is from someone who loves you 💖</h2>
+  <button onclick="nextScreen(4)">Continue ➡️</button>
+</div>
+
+<div class="screen" id="screen4">
+  <img id="photo" src="images/photo1.jpg">
+  <p id="text">Your message will be here</p>
+  <button onclick="nextSlide()">Next ➡️</button>
+</div>
+
+<div class="screen" id="screen5">
+  <h1>Happy Birthday 💖🎂</h1>
+  <p>You mean everything to me</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html

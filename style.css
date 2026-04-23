@@ -1,0 +1,50 @@
+}
+body {
+  margin: 0;
+  font-family: Arial;
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+.screen {
+  display: none;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.active {
+  display: flex;
+  animation: fade 0.5s ease;
+}
+
+button {
+  padding: 12px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  background: pink;
+  color: black;
+  font-size: 16px;
+}
+
+img {
+  max-width: 80%;
+  border-radius: 10px;
+}
+
+.stitch {
+  width: 150px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes fade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes bounce {
+  0%,100% {transform: translateY(0);}
+  50% {transform: translateY(-10px);}
